@@ -102,7 +102,7 @@ function addEmployeePrompt() {
 
 function viewEmployees() {
   console.log("Viewing all employees...\n");
-  connection.query("SELECT * FROM employee", function (err, res) {
+  con.query("SELECT * FROM employee", function (err, res) {
       if (err) throw err;
       // Log all results of the SELECT statement
       console.table(res);
@@ -112,7 +112,7 @@ function viewEmployees() {
 
 function viewRoles() {
   console.log("Viewing all roles...\n");
-  connection.query("SELECT * FROM role", function (err, res) {
+  con.query("SELECT * FROM role", function (err, res) {
       if (err) throw err;
       // Log all results of the SELECT statement
       console.table(res);
@@ -122,7 +122,7 @@ function viewRoles() {
 
 function viewDepartments() {
   console.log("Viewing all departments...\n");
-  connection.query("SELECT * FROM department", function (err, res) {
+  con.query("SELECT * FROM department", function (err, res) {
       if (err) throw err;
       // Log all results of the SELECT statement
       console.table(res);
@@ -157,7 +157,7 @@ function addEmployee() {
           }
       ])
       .then(function ({ first_name, last_name, role_id, manager_id }) {
-          connection.query("INSERT INTO employee SET ?",
+          con.query("INSERT INTO employee SET ?",
               {
                   first_name: first_name,
                   last_name: last_name,
@@ -193,7 +193,7 @@ function addRole() {
           }
       ])
       .then(function ({ title, salary, department_id }) {
-          connection.query("INSERT INTO role SET ?",
+          con.query("INSERT INTO role SET ?",
               {
                   title: title,
                   salary: salary,
@@ -218,7 +218,7 @@ function addDepartment() {
           }
       ])
       .then(function ({ department_name }) {
-          connection.query("INSERT INTO department SET ?",
+          con.query("INSERT INTO department SET ?",
               {
                   name: department_name
               },
@@ -234,7 +234,7 @@ function addDepartment() {
 
 
 function updateEmployeeRole() {
-  connection.query(
+  con.query(
       "SELECT * FROM role",
       function (err, res) {
           if (err) throw err;
@@ -262,7 +262,7 @@ function updateEmployeeRole() {
               ])
               .then(function ({ employee_id, chosenRole }) {
                   console.log("Updating employee role...\n");
-                  connection.query(
+                  con.query(
                       "UPDATE employee SET ? WHERE ?",
                       [
                           {
@@ -284,7 +284,7 @@ function updateEmployeeRole() {
 }
 
 function exitPrompt() {
-  connection.end();
+  con.end();
 }
 //TODO:
 // Bonus points if you're able to:
