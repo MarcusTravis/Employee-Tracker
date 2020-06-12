@@ -40,7 +40,7 @@ User must run index.js inside of node to follow promps and view, add, or update 
 
 ## Contributing
 
-Marcus Travis
+UofA code bootcamp course content
 
 ## Version
 (Update this as needed)
