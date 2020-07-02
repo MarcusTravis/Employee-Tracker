@@ -236,7 +236,7 @@ function addDepartment() {
 
 function updateEmployeeRole() {
   con.query(
-      "SELECT * FROM role",
+      "SELECT * FROM employee_role",
       function (err, res) {
           if (err) throw err;
           const roles = res;
