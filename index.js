@@ -1,27 +1,28 @@
+// ## Minimum Requirements
 
+// * Functional application.
 
-// Build a command-line application that at a minimum allows the user to:
+// * GitHub repository with a unique name and a README describing the project.
 
-//     1. Add departments, roles, employees
+// * The command-line application should allow users to:
 
-//     2. View departments, roles, employees
+//   * Add departments, roles, employees
 
-//     3. Update employee roles
+//   * View departments, roles, employees
 
-// Use the MySQL NPM package to connect to your MySQL database and perform queries.
+//   * Update employee roles
 
-// Use InquirerJs NPM package to interact with the user via the command-line.
+// ## Bonus
 
-// Use console.table to print MySQL rows to the console. There is a built-in version 
-// of console.table, but the NPM package formats the data a little better for our 
-// purposes.
+// * The command-line application should allow users to:
 
-// You may wish to have a separate file containing functions for performing specific 
-// SQL queries you'll need to use. Could a constructor function or a class be helpful 
-// for organizing these?
+//   * Update employee managers
 
-// You will need to perform a variety of SQL JOINS to complete this assignment, and 
-// it's recommended you review the week's activities if you need a refresher on this.
+//   * View employees by manager
+
+//   * Delete departments, roles, and employees
+
+//   * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
 
 const mysql = require("mysql");
 const inquirer = require("inquirer");
