@@ -113,7 +113,7 @@ function viewEmployees() {
 
 function viewRoles() {
   console.log("Viewing all roles...\n");
-  con.query("SELECT * FROM role", function (err, res) {
+  con.query("SELECT * FROM employee_role", function (err, res) {
       if (err) throw err;
       // Log all results of the SELECT statement
       console.table(res);
@@ -194,7 +194,7 @@ function addRole() {
           }
       ])
       .then(function ({ title, salary, department_id }) {
-          con.query("INSERT INTO role SET ?",
+          con.query("INSERT INTO employee_role SET ?",
               {
                   title: title,
                   salary: salary,
