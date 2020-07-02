@@ -5,13 +5,12 @@
 
 ## Table of Contents
 
+* [Description](#description)
 * [Prerequisites](#prerequisites)
 * [Installing](#Installing)
-* [Running the tests](#running-the-tests)
 * [Deployment](#deployment)
 * [Built With](#built-with)
 * [Contributing](#contributing)
-* [Version](#version)
 * [Authors](#authors)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
@@ -23,10 +22,6 @@ This is a command-line Employee tracker application that will allow a user to ke
 ### Prerequisites
 
 Node.js 
-
-## Running the tests
-
-N/A
 
 ## Deployment
 
@@ -41,10 +36,6 @@ User must run index.js inside of node to follow promps and view, add, or update 
 ## Contributing
 
 UofA code bootcamp course content
-
-## Version
-(Update this as needed)
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
