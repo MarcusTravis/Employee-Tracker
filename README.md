@@ -43,7 +43,7 @@ UofA code bootcamp course content
 
 ## License
 
-N/A
+MIT
 
 ## Acknowledgments
 
