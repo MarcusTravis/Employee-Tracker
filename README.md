@@ -6,6 +6,7 @@
 ## Table of Contents
 
 * [Description](#description)
+* [Video Example](#video-example)
 * [Prerequisites](#prerequisites)
 * [Installing](#Installing)
 * [Deployment](#deployment)
@@ -18,6 +19,9 @@
 ## Description
 
 This is a command-line Employee tracker application that will allow a user to keep track of employee id's, roles, and departments by viewing, adding, and updating employee data with Node.js.
+
+### Video Example:
+![video of app](./public/images/employee-tracker-gif.gif)
 
 ### Prerequisites
 
