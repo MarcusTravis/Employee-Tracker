@@ -8,7 +8,6 @@
 * [Description](#description)
 * [Video Example](#video-example)
 * [Prerequisites](#prerequisites)
-* [Installing](#Installing)
 * [Deployment](#deployment)
 * [Built With](#built-with)
 * [Contributing](#contributing)
